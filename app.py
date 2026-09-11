@@ -13,7 +13,7 @@ st.markdown("---")
 # 1. Load Data
 @st.cache_data
 def load_data():
-    csv_file = "smart_bins_delhi_master.csv"
+    return pd.read_csv("smart_bins_delhi_1500.csv")
     if not os.path.exists(csv_file):
         # Check parent downloads folder as fallback
         fallback = os.path.expanduser("~/Downloads/smart_bins_delhi_master.csv")
